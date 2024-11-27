@@ -13,3 +13,13 @@ $maVoiture->setMarque('wzdzfze');
 var_dump($maVoiture);
 echo'<br>';
 
+$essai = new Elfe('david');
+var_dump($essai);
+echo'<br>';
+
+$elfe = new Elfe('');
+$nain = new Nain('');
+$DomeDuTonnerre;
+$DomeDuTonnerre = [$elfe, $nain];
+$firstStrike = $nain ->defendre() - $elfe -> attaquer();
+
