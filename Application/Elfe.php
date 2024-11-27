@@ -23,4 +23,21 @@ public function __construct($nom) {
     $this->endurance = 60;
     $this->enVie = true;
 }
+    // definition des fonctions set pour chaque variable
+    public function setPV(int  $PV) {
+        $this -> PV = $PV;
+    }
+    // definition des fonctions get pour chaque variable
+    public function getPV(int  $PV) {
+        return $this -> PV;
+    }
+
+
+
+
+public function attaquer(){
+    $this->arc();
+    return $this->force;
+}
+
 }

@@ -16,10 +16,34 @@ echo'<br>';
 $essai = new Elfe('david');
 var_dump($essai);
 echo'<br>';
+echo'<br>';
+$essai2 = new Nain('ugo');
+var_dump($essai2);
+echo'<br>';
+echo'<br>';
+
 
 $elfe = new Elfe('');
+var_dump($elfe);
+echo'<br>';
+echo'<br>';
+
 $nain = new Nain('');
+var_dump($elfe);
+echo'<br>';
+echo'<br>';
+$cible;
+
 $DomeDuTonnerre;
 $DomeDuTonnerre = [$elfe, $nain];
 $firstStrike = $nain ->defendre() - $elfe -> attaquer();
+var_dump($firstStrike);
+echo'<br>';
+echo'<br>';
+
+echo'<br>';
+echo'<br>';
+
+
+
 
