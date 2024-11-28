@@ -1,9 +1,9 @@
 <?php
 Interface Talent {
-    public function cavalier();
-    public function magicien();
-    public function guerrier();
-    public function necromancien();
-    public function voleur();
-    public function assassin();
+    public function cavalier($type);
+    public function magicien($type);
+    public function guerrier($type);
+    public function necromancien($type);
+    public function voleur($type);
+    public function assassin($type);
 }

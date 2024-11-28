@@ -53,6 +53,19 @@ echo'<br>';
 echo'<br>';
 
 var_dump($nain);
+echo'<br>';
+echo'<br>';
+
+
+echo $elfe -> getgeneral('endurance');
+echo'<br>';
+echo'<br>';
+echo $elfe -> getgeneral('PV');
+
+
+
+echo $elfe -> getPV();
+
 
 
 

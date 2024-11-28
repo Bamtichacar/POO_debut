@@ -1,8 +1,11 @@
 <?php
 Interface Arme {
-    public function epee();
-    public function arc();
-    public function masseDArme();
-    public function baton();
-    public function batonMagique();
+    public function epee($type);
+    public function arc($type);
+    public function masseDArme($type);
+    public function baton($type);
+    public function batonMagique($type);
+    public function getForce();
+
 }
+

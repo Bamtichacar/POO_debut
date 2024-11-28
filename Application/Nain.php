@@ -1,18 +1,22 @@
 <?php
 class Nain extends Perso Implements Arme, Talent {
     // implementation de Arme
-    public function epee() {}
-    public function arc() {}
-    public function masseDArme() {}
-    public function baton() {}
-    public function batonMagique() {}
+    public function epee($type) {}
+    public function arc($type) {}
+    public function masseDArme($type) {}
+    public function baton($type) {}
+    public function batonMagique($type) {}
     // implementation de Talent
-    public function cavalier() {}
-    public function magicien() {}
-    public function guerrier() {}
-    public function necromancien() {}
-    public function voleur() {}
-    public function assassin() {}
+    public function cavalier($type) {}
+    public function magicien($type) {}
+    public function guerrier($type) {}
+    public function necromancien($type) {}
+    public function voleur($type) {}
+    public function assassin($type) {}
+
+    public function getForce() {
+        return $this->force;
+    }
 
     public function __construct($toto) {
         $this->name = $toto;
