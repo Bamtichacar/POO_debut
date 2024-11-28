@@ -11,6 +11,9 @@ class Elfe extends Perso Implements Arme, Talent {
             case 'niveau_2':
                 $this->force = 80000;
                 break;
+                case 'niveau_3':
+                    $this->force = 80000;
+                    break;
             default:
                 $this->force = 100000; // Valeur par défaut
         }
@@ -39,10 +42,24 @@ public function __construct($nom) {
     $this->enVie = true;
 }
     // definition des fonctions set pour chaque variable
+    public function setNom(string  $nom) {
+        $this -> nom = $nom;
+    }
     public function setPV(int  $PV) {
         $this -> PV = $PV;
-        
     }
+    public function setForce(int  $force) {
+        $this -> force = $force;
+    }
+    public function setEndurance(int  $endurance) {
+        $this -> endurance = $endurance;
+    }
+    public function setEnVie(bool  $enVie) {
+        $this -> envie = $enVie;
+    }
+
+
+
 
 
     // definition des fonctions get pour chaque variable
@@ -67,7 +84,7 @@ public function attaquer(){
     $this->arc('niveau_1');
     return $this->force;
 }
-
+// fonction attaquer ave action sur la cible
 public function attaquerbis($cible) {
     $cible -> PV -= $this -> force;
 }
