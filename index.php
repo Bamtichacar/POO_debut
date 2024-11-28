@@ -62,6 +62,8 @@ echo'<br>';
 echo'<br>';
 echo $elfe -> getgeneral('PV');
 
+// var_dump(GetValeurs::getValeursDeLInstance($elfe,'endurance')); ne marche pas, cf dans la classe GetValeurs
+
 
 
 echo $elfe -> getPV();
