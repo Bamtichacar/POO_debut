@@ -23,7 +23,7 @@ echo'<br>';
 echo'<br>';
 
 
-$elfe = new Elfe('');
+$elfe = new Elfe('henri');
 var_dump($elfe);
 echo'<br>';
 echo'<br>';
@@ -153,3 +153,9 @@ $elfe -> afficheGetAll();
 echo'<br>';
 
 $nain -> afficheGetAll();
+
+
+echo'<br>';
+echo'<br>';
+echo $elfe -> getgeneral('name');
+echo $elfe -> getgeneral('force');
