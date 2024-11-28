@@ -29,7 +29,7 @@ echo'<br>';
 echo'<br>';
 
 $nain = new Nain('');
-var_dump($elfe);
+var_dump($nain);
 echo'<br>';
 echo'<br>';
 $cible;
@@ -44,6 +44,15 @@ echo'<br>';
 echo'<br>';
 echo'<br>';
 
+$elfe -> attaquerbis($nain);
+echo'<br>';
+echo'<br>';
+
+var_dump($elfe);
+echo'<br>';
+echo'<br>';
+
+var_dump($nain);
 
 
 

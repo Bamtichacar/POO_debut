@@ -40,4 +40,9 @@ public function attaquer(){
     return $this->force;
 }
 
+public function attaquerbis($cible) {
+    $cible -> PV -= $this -> force;
+}
+
+
 }
