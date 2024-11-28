@@ -182,14 +182,34 @@ class Elfe extends Perso Implements Arme, Talent {
 
 public function __construct($nom) {
     $this->name = $nom;
+    $this->uniteRace = 70;
     $this->PV = 100;
     $this->force = 40;
     $this->endurance = 60;
     $this->enVie = true;
+    $this->pointsestenVie();
 }
-    // definition des fonctions set pour chaque variable
+private function pointsestenVie() {
+    $pointsDeVie;
+    if ($this->enVie) {
+        return $this -> pointsDeVie = 50;
+    } else {
+        return $this-> pointsDeVie = 0;
+    }
+}
+
+// determination des unités
+public function UnitesArmee(){
+    $unites = $this -> uniteRace + $this ->force + $this -> endurance + $this -> PV + $this -> pointsDeVie;
+}
+
+
+// definition des fonctions set pour chaque variable
     public function setNom(string  $nom) {
         $this -> nom = $nom;
+    }
+    public function setUniteRace(int  $uniteRace) {
+        $this -> uniteRace = $uniteRace;
     }
     public function setPV(int  $PV) {
         $this -> PV = $PV;
@@ -201,7 +221,8 @@ public function __construct($nom) {
         $this -> endurance = $endurance;
     }
     public function setEnVie(bool  $enVie) {
-        $this -> envie = $enVie;
+        $this->enVie = $enVie;
+        $this->pointsestenVie(); // Met à jour les points de vie
     }
 
 
@@ -231,10 +252,12 @@ public function getAll() {
     return [
         'class' => get_class($this),
         'name' => $this->name,
+        'uniteRace' => $this->uniteRace,
         'PV' => $this->PV,
         'force' => $this->force,
         'endurance' => $this->endurance,
-        'enVie' => $this->enVie
+        'enVie' => $this->enVie,
+        'pointsDeVie' => $this->pointsDeVie,
     ];
 }
 public function afficheGetAll(){

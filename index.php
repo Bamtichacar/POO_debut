@@ -87,7 +87,7 @@ echo '<br>';
 
 echo'<br>';
 echo'<br>';
-
+$elfe -> setEnVie(false);
 
 
 echo "<h4>atk ac arc niv 2</h4>";
