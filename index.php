@@ -44,7 +44,7 @@ echo'<br>';
 echo'<br>';
 echo'<br>';
 
-$elfe -> attaquerbis($nain);
+//$elfe -> attaquerbis($nain);
 echo'<br>';
 echo'<br>';
 
@@ -63,11 +63,93 @@ echo'<br>';
 echo $elfe -> getgeneral('PV');
 
 // var_dump(GetValeurs::getValeursDeLInstance($elfe,'endurance')); ne marche pas, cf dans la classe GetValeurs
+echo'<br>';
+echo'<br>';
+
+//echo $elfe -> getPV();
+echo "<h2>test des attaques</h2>";
+echo'<br>';
+echo'<br>';
+echo "<h4>atk ac arc niv 1</h4>";
+echo'<br>';
+echo'<br>';
+
+echo $elfe -> getgeneral('PV');
+echo '<br>';
+echo $nain -> getgeneral('PV');
+echo '<br>';
+echo $elfe -> attaquerEnnemiAvecArme($nain, 'arc', 'niveau_1');
+echo '<br>';
+echo $elfe -> getgeneral('PV');
+echo '<br>';
+echo $nain -> getgeneral('PV');
+echo '<br>';
+
+echo'<br>';
+echo'<br>';
 
 
 
-echo $elfe -> getPV();
+echo "<h4>atk ac arc niv 2</h4>";
+echo'<br>';
+echo'<br>';
+
+echo $elfe -> getgeneral('PV');
+echo '<br>';
+echo $nain -> getgeneral('PV');
+echo '<br>';
+echo $elfe -> attaquerEnnemiAvecArme($nain, 'arc', 'niveau_2');
+echo '<br>';
+echo $elfe -> getgeneral('PV');
+echo '<br>';
+echo $nain -> getgeneral('PV');
+echo '<br>';
+
+echo'<br>';
+echo'<br>';
+
+echo "<h4>atk ac arc niv inexistant</h4>";
+echo'<br>';
+echo'<br>';
+
+echo $elfe -> getgeneral('PV');
+echo '<br>';
+echo $nain -> getgeneral('PV');
+echo '<br>';
+echo $elfe -> attaquerEnnemiAvecArme($nain, 'arc');
+echo '<br>';
+echo $elfe -> getgeneral('PV');
+echo '<br>';
+echo $nain -> getgeneral('PV');
+echo '<br>';
 
 
+echo'<br>';
+echo'<br>';
+//echo $elfe -> getAll();
+echo'<br>';
+echo'<br>';
+//echo $nain -> getAll();
 
+// faire ça car on ne peut pas afficher un tableau :
+print_r($elfe->getAll());
+echo'<br>';
 
+// ou 
+var_dump($elfe->getAll());
+echo'<br>';
+
+//ou
+echo implode(', ', $elfe -> getAll());
+echo'<br>';
+
+// encore 
+$valeurs = $elfe->getAll();
+foreach ($valeurs as $cle => $valeur) {
+    echo "$cle: $valeur\n";
+}
+echo'<br>';
+$elfe -> afficheGetAll();
+echo'<br>';
+
+$nain -> afficheGetAll();

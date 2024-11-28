@@ -20,8 +20,7 @@ class Arc implements Arme {
     }
 }
 
-
-    // Utilisation
+// Utilisation
     $arc = new Arc();
     $arc->arc('long');
     echo $arc->getForce(); // 150000

@@ -26,14 +26,45 @@ class Nain extends Perso Implements Arme, Talent {
         $this->enVie = true;
     }    
 
+
+    
     // definition des fonctions set pour chaque variable
     public function setPV(int  $PV) {
         $this -> PV = $PV;
     }
+
+    // fct pour avoir le nom de la classe
+    public function getClassName() {
+        return get_class($this);
+    }
+
     // definition des fonctions get pour chaque variable
     public function getPV(int  $PV) {
         return $this -> PV;
     }
     
+     // test getting general
+    public function getgeneral($propriete) {
+        return $this -> $propriete; 
+    }
+    public function getAll() {
+        return [
+            'class' => get_class($this),
+            'name' => $this->name,
+            'PV' => $this->PV,
+            'force' => $this->force,
+            'endurance' => $this->endurance,
+            'enVie' => $this->enVie
+        ];
+    }
+    public function afficheGetAll(){
+        $valeurs = $this->getAll();
+    foreach ($valeurs as $cle => $valeur) {
+        echo "$cle: $valeur\n";
+    }
+    }
     
+
+
+
 }
