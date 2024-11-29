@@ -289,7 +289,7 @@ private $degats;
         $this -> unitesTotalesDuPerso = $unitesTotalesDuPerso;
     }
 
-
+ 
     // fct pour avoir le nom de la classe
     public function getClassName() {
         return get_class($this);
