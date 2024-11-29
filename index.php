@@ -34,6 +34,27 @@ echo'<br>';
 echo'<br>';
 $cible;
  */
+echo "<h2>Etat initial</h2>";
+echo'<br>';
+echo'<br>';
+
+$elfe ->afficheGetAll();
+echo'<br>';
+echo'<br>';
+
+$nain -> afficheGetAll();
+
+//var_dump($firstStrike);
+echo'<br>';
+echo'<br>';
+
+echo "<h2>combat</h2>";
+echo'<br>';
+echo'<br>';
+
+
+
+
 $DomeDuTonnerre;
 $DomeDuTonnerre = [$elfe, $nain];
 $firstStrike = $nain ->defendre() - $elfe -> attaquer();
@@ -41,6 +62,10 @@ $secondstrike = $elfe -> attaquerEnnemiAvecArme($nain, 'arc', 'niveau_2', 'voleu
 //var_dump($secondstrike);
 echo'<br>';
 echo'<br>';
+var_dump($DomeDuTonnerre);
+echo'<br>';
+echo'<br>';
+
 
 $elfe ->afficheGetAll();
 echo'<br>';

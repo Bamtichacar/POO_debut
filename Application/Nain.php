@@ -224,8 +224,8 @@ class Nain extends Perso Implements Arme, Talent {
     }
  */
 
-public function __construct($toto) {
-    $this->name = $toto;
+public function __construct($nom) {
+    $this->name = $nom;
     $this->unitesDeRace = 70;
     $this->PV = 100;
     $this->force = 60;
@@ -245,6 +245,19 @@ public function pointsestenVie() {
         return $this-> unitesDeEnVie = 0;
     }
 }
+// fonction 
+public function miseAJourDesUnitesTotalesDuPerso() {
+    $this->unitesTotalesDuPerso = 
+        $this->unitesDeRace + 
+        $this->force + 
+        $this->endurance + 
+        $this->PV + 
+        $this->unitesDeEnVie + 
+        $this->unitesDeTalent + 
+        $this->unitesDeArme;
+}
+
+
 
 // Création des variables pour les dégâts des attaques
 public $degatsMisEnJeuParLAttaque = 0;
@@ -368,7 +381,7 @@ public function getAll() {
 public function afficheGetAll(){
     $valeurs = $this->getAll();
     foreach ($valeurs as $cle => $valeur) {
-        echo "$cle: $valeur\n <br>";
+        echo "$cle: $valeur <br>";
     }
 }
 
@@ -386,14 +399,18 @@ public function attaquerbis($cible) {
 public function attaquerEnnemiAvecArme($cible, $arme, $typeA='null', $talent, $typeT='null') {
     $this -> $arme($typeA);
     $this -> $talent($typeT);
-    $this -> force;
-    $this -> unitesTotalesDuPerso;
-    $this -> degatsMisEnJeuParLAttaque;
+    //$this -> force;
+    //$this -> unitesTotalesDuPerso;
+    //$this -> degatsMisEnJeuParLAttaque;
     //$cible -> PV -= $this -> force;
     $this-> degatsFaitsALAdversaire += $this -> degatsMisEnJeuParLAttaque;
     $cible -> PV -= $this -> degatsMisEnJeuParLAttaque;
     $cible -> degatsRecus += $this-> degatsFaitsALAdversaire;
-    $cible -> unitesTotalesDuPerso -= $cible -> degatsRecus;
+    //$cible -> unitesTotalesDuPerso -= $cible -> degatsRecus;
+
+    // Mise à jour les unités totales du perso
+    $this->miseAJourDesUnitesTotalesDuPerso();
+    $cible->miseAJourDesUnitesTotalesDuPerso();
 }
 
 

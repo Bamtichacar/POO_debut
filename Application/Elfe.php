@@ -7,18 +7,22 @@ class Elfe extends Perso Implements Arme, Talent {
             case 'niveau_1':
                 $this->force = 150000;
                 $this -> degatsMisEnJeuParLAttaque = 30;
+                $this -> unitesDeArme = 200;
                 break;
             case 'niveau_2':
                 $this->force = 200000;
                 $this -> degatsMisEnJeuParLAttaque = 40;
+                $this -> unitesDeArme = 300;
                 break;
-                case 'niveau_3':
-                    $this->force = 300000;
-                    $this -> degatsMisEnJeuParLAttaque = 50;
-                    break;
+            case 'niveau_3':
+                $this->force = 300000;
+                $this -> degatsMisEnJeuParLAttaque = 50;
+                $this -> unitesDeArme = 400;
+                break;
             default:
                 $this->force = 100000; // Valeurs par défaut
                 $this -> degatsMisEnJeuParLAttaque = 10;
+                $this -> unitesDeArme = 100;
         }
     }
 
@@ -27,18 +31,22 @@ class Elfe extends Perso Implements Arme, Talent {
             case 'niveau_1':
                 $this->force = 150000;
                 $this -> degatsMisEnJeuParLAttaque = 30;
+                $this -> unitesDeArme = 200;
                 break;
             case 'niveau_2':
                 $this->force = 200000;
                 $this -> degatsMisEnJeuParLAttaque = 40;
+                $this -> unitesDeArme = 300;
                 break;
-                case 'niveau_3':
-                    $this->force = 300000;
-                    $this -> degatsMisEnJeuParLAttaque = 50;
-                    break;
+            case 'niveau_3':
+                $this->force = 300000;
+                $this -> degatsMisEnJeuParLAttaque = 50;
+                $this -> unitesDeArme = 400;
+                break;
             default:
                 $this->force = 100000; // Valeurs par défaut
                 $this -> degatsMisEnJeuParLAttaque = 10;
+                $this -> unitesDeArme = 100;
         }
     }
 
@@ -47,18 +55,22 @@ class Elfe extends Perso Implements Arme, Talent {
             case 'niveau_1':
                 $this->force = 150000;
                 $this -> degatsMisEnJeuParLAttaque = 30;
+                $this -> unitesDeArme = 200;
                 break;
             case 'niveau_2':
                 $this->force = 200000;
                 $this -> degatsMisEnJeuParLAttaque = 40;
+                $this -> unitesDeArme = 300;
                 break;
-                case 'niveau_3':
-                    $this->force = 300000;
-                    $this -> degatsMisEnJeuParLAttaque = 50;
-                    break;
+            case 'niveau_3':
+                $this->force = 300000;
+                $this -> degatsMisEnJeuParLAttaque = 50;
+                $this -> unitesDeArme = 400;
+                break;
             default:
                 $this->force = 100000; // Valeurs par défaut
                 $this -> degatsMisEnJeuParLAttaque = 10;
+                $this -> unitesDeArme = 100;
         }
     }
 
@@ -67,18 +79,22 @@ class Elfe extends Perso Implements Arme, Talent {
             case 'niveau_1':
                 $this->force = 150000;
                 $this -> degatsMisEnJeuParLAttaque = 30;
+                $this -> unitesDeArme = 200;
                 break;
             case 'niveau_2':
                 $this->force = 200000;
                 $this -> degatsMisEnJeuParLAttaque = 40;
+                $this -> unitesDeArme = 300;
                 break;
-                case 'niveau_3':
-                    $this->force = 300000;
-                    $this -> degatsMisEnJeuParLAttaque = 50;
-                    break;
+            case 'niveau_3':
+                $this->force = 300000;
+                $this -> degatsMisEnJeuParLAttaque = 50;
+                $this -> unitesDeArme = 400;
+                break;
             default:
                 $this->force = 100000; // Valeurs par défaut
                 $this -> degatsMisEnJeuParLAttaque = 10;
+                $this -> unitesDeArme = 100;
         }
     }
 
@@ -87,18 +103,22 @@ class Elfe extends Perso Implements Arme, Talent {
             case 'niveau_1':
                 $this->force = 150000;
                 $this -> degatsMisEnJeuParLAttaque = 30;
+                $this -> unitesDeArme = 200;
                 break;
             case 'niveau_2':
                 $this->force = 200000;
                 $this -> degatsMisEnJeuParLAttaque =40;
+                $this -> unitesDeArme = 300;
                 break;
-                case 'niveau_3':
-                    $this->force = 300000;
-                    $this -> degatsMisEnJeuParLAttaque = 50;
-                    break;
+            case 'niveau_3':
+                $this->force = 300000;
+                $this -> degatsMisEnJeuParLAttaque = 50;
+                $this -> unitesDeArme = 400;
+                break;
             default:
                 $this->force = 100000; // Valeurs par défaut
                 $this -> degatsMisEnJeuParLAttaque = 10;
+                $this -> unitesDeArme = 100;
         }
     }
 
@@ -108,19 +128,22 @@ class Elfe extends Perso Implements Arme, Talent {
             case 'niveau_1':
                 $this->force *= 1.5;
                 $this -> degatsMisEnJeuParLAttaque *= 1.5;
+                $this -> unitesDeTalent = 2000;
                 break;
             case 'niveau_2':
                 $this->force *= 2;
                 $this -> degatsMisEnJeuParLAttaque *= 2;
+                $this -> unitesDeTalent = 3000;
                 break;
-                case 'niveau_3':
-                    $this->force *= 3;
-                    $this -> degatsMisEnJeuParLAttaque *= 3;
-                    break;
+            case 'niveau_3':
+                $this->force *= 3;
+                $this -> degatsMisEnJeuParLAttaque *= 3;
+                $this -> unitesDeTalent = 4000;
+                break;
             default:
                 $this->force = $force; // Valeur par défaut
                 $this -> degatsMisEnJeuParLAttaque = $degatsMisEnJeuParLAttaque;
-
+                $this -> unitesDeTalent = 1000;
         }
     }
     public function magicien($type) {
@@ -128,18 +151,22 @@ class Elfe extends Perso Implements Arme, Talent {
             case 'niveau_1':
                 $this->force *= 1.5;
                 $this -> degatsMisEnJeuParLAttaque *= 1.5;
+                $this -> unitesDeTalent = 2000;
                 break;
             case 'niveau_2':
                 $this->force *= 2;
                 $this -> degatsMisEnJeuParLAttaque *= 2;
+                $this -> unitesDeTalent = 3000;
                 break;
-                case 'niveau_3':
-                    $this->force *= 3;
-                    $this -> degatsMisEnJeuParLAttaque *= 3;
-                    break;
+            case 'niveau_3':
+                $this->force *= 3;
+                $this -> degatsMisEnJeuParLAttaque *= 3;
+                $this -> unitesDeTalent = 4000;
+                break;
             default:
-            $this->force = $force; // Valeur par défaut
-            $this -> degatsMisEnJeuParLAttaque = $degatsMisEnJeuParLAttaque;
+                $this->force = $force; // Valeur par défaut
+                $this -> degatsMisEnJeuParLAttaque = $degatsMisEnJeuParLAttaque;
+                $this -> unitesDeTalent = 1000;
         }
     }
     public function guerrier($type) {
@@ -147,18 +174,22 @@ class Elfe extends Perso Implements Arme, Talent {
             case 'niveau_1':
                 $this->force *= 1.5;
                 $this -> degatsMisEnJeuParLAttaque *= 1.5;
+                $this -> unitesDeTalent = 2000;
                 break;
             case 'niveau_2':
                 $this->force *= 2;
                 $this -> degatsMisEnJeuParLAttaque *= 2;
+                $this -> unitesDeTalent = 3000;
                 break;
-                case 'niveau_3':
-                    $this->force *= 3;
-                    $this -> degatsMisEnJeuParLAttaque *= 3;
-                    break;
+            case 'niveau_3':
+                $this->force *= 3;
+                $this -> degatsMisEnJeuParLAttaque *= 3;
+                $this -> unitesDeTalent = 4000;
+                break;
             default:
-            $this->force = $force; // Valeur par défaut
-            $this -> degatsMisEnJeuParLAttaque = $degatsMisEnJeuParLAttaque;
+                $this->force = $force; // Valeur par défaut
+                $this -> degatsMisEnJeuParLAttaque = $degatsMisEnJeuParLAttaque;
+                $this -> unitesDeTalent = 1000;
         }
     }
     public function necromancien($type) {
@@ -166,18 +197,22 @@ class Elfe extends Perso Implements Arme, Talent {
             case 'niveau_1':
                 $this->force *= 1.5;
                 $this -> degatsMisEnJeuParLAttaque *= 1.5;
+                $this -> unitesDeTalent = 2000;
                 break;
             case 'niveau_2':
                 $this->force *= 2;
                 $this -> degatsMisEnJeuParLAttaque *= 2;
+                $this -> unitesDeTalent = 3000;
                 break;
-                case 'niveau_3':
-                    $this->force *= 3;
-                    $this -> degatsMisEnJeuParLAttaque *= 3;
-                    break;
+            case 'niveau_3':
+                $this->force *= 3;
+                $this -> degatsMisEnJeuParLAttaque *= 3;
+                $this -> unitesDeTalent = 4000;
+                break;
             default:
-            $this->force = $force; // Valeur par défaut
-            $this -> degatsMisEnJeuParLAttaque = $degatsMisEnJeuParLAttaque;
+                $this->force = $force; // Valeur par défaut
+                $this -> degatsMisEnJeuParLAttaque = $degatsMisEnJeuParLAttaque;
+                $this -> unitesDeTalent = 1000;
         }
     }
     public function voleur($type) {
@@ -185,18 +220,22 @@ class Elfe extends Perso Implements Arme, Talent {
             case 'niveau_1':
                 $this->force *= 1.5;
                 $this -> degatsMisEnJeuParLAttaque *= 1.5;
+                $this -> unitesDeTalent = 2000;
                 break;
             case 'niveau_2':
                 $this->force *= 2;
                 $this -> degatsMisEnJeuParLAttaque *= 2;
+                $this -> unitesDeTalent = 3000;
                 break;
-                case 'niveau_3':
-                    $this->force *= 3;
-                    $this -> degatsMisEnJeuParLAttaque *= 3;
-                    break;
+            case 'niveau_3':
+                $this->force *= 3;
+                $this -> degatsMisEnJeuParLAttaque *= 3;
+                $this -> unitesDeTalent = 4000;
+                break;
             default:
-            $this->force = $force; // Valeur par défaut
-            $this -> degatsMisEnJeuParLAttaque = $degatsMisEnJeuParLAttaque;
+                $this->force = $force; // Valeur par défaut
+                $this -> degatsMisEnJeuParLAttaque = $degatsMisEnJeuParLAttaque;
+                $this -> unitesDeTalent = 1000;
         }
     }
     public function assassin($type) {
@@ -204,18 +243,22 @@ class Elfe extends Perso Implements Arme, Talent {
             case 'niveau_1':
                 $this->force *= 1.5;
                 $this -> degatsMisEnJeuParLAttaque *= 1.5;
+                $this -> unitesDeTalent = 2000;
                 break;
             case 'niveau_2':
                 $this->force *= 2;
                 $this -> degatsMisEnJeuParLAttaque *= 2;
+                $this -> unitesDeTalent = 3000;
                 break;
-                case 'niveau_3':
-                    $this->force *= 3;
-                    $this -> degatsMisEnJeuParLAttaque *= 3;
-                    break;
+            case 'niveau_3':
+                $this->force *= 3;
+                $this -> degatsMisEnJeuParLAttaque *= 3;
+                $this -> unitesDeTalent = 4000;
+                break;
             default:
-            $this->force = $force; // Valeur par défaut
-            $this -> degatsMisEnJeuParLAttaque = $degatsMisEnJeuParLAttaque;
+                $this->force = $force; // Valeur par défaut
+                $this -> degatsMisEnJeuParLAttaque = $degatsMisEnJeuParLAttaque;
+                $this -> unitesDeTalent = 1000;
         }
     }
 
@@ -245,6 +288,19 @@ public function pointsestenVie() {
         return $this-> unitesDeEnVie = 0;
     }
 }
+// fonction 
+public function miseAJourDesUnitesTotalesDuPerso() {
+    $this->unitesTotalesDuPerso = 
+        $this->unitesDeRace + 
+        $this->force + 
+        $this->endurance + 
+        $this->PV + 
+        $this->unitesDeEnVie + 
+        $this->unitesDeTalent + 
+        $this->unitesDeArme;
+}
+
+
 
 // Création des variables pour les dégâts des attaques
 public $degatsMisEnJeuParLAttaque = 0;
@@ -368,7 +424,7 @@ public function getAll() {
 public function afficheGetAll(){
     $valeurs = $this->getAll();
     foreach ($valeurs as $cle => $valeur) {
-        echo "$cle: $valeur\n <br>";
+        echo "$cle: $valeur <br>";
     }
 }
 
@@ -386,14 +442,18 @@ public function attaquerbis($cible) {
 public function attaquerEnnemiAvecArme($cible, $arme, $typeA='null', $talent, $typeT='null') {
     $this -> $arme($typeA);
     $this -> $talent($typeT);
-    $this -> force;
-    $this -> unitesTotalesDuPerso;
-    $this -> degatsMisEnJeuParLAttaque;
+    //$this -> force;
+    //$this -> unitesTotalesDuPerso;
+    //$this -> degatsMisEnJeuParLAttaque;
     //$cible -> PV -= $this -> force;
     $this-> degatsFaitsALAdversaire += $this -> degatsMisEnJeuParLAttaque;
     $cible -> PV -= $this -> degatsMisEnJeuParLAttaque;
     $cible -> degatsRecus += $this-> degatsFaitsALAdversaire;
-    $cible -> unitesTotalesDuPerso -= $cible -> degatsRecus;
+    //$cible -> unitesTotalesDuPerso -= $cible -> degatsRecus;
+
+    // Mise à jour les unités totales du perso
+    $this->miseAJourDesUnitesTotalesDuPerso();
+    $cible->miseAJourDesUnitesTotalesDuPerso();
 }
 
 
