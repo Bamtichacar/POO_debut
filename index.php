@@ -194,3 +194,19 @@ echo'<br>';
 echo'<br>';
 
 
+echo "<h3>Combat test numero 2</h3>";
+echo'<br>';
+echo'<br>';
+$elfe -> attaquerEnnemiAvecArme($nain, 'arc','','cavalier', 'niveau_3');
+
+echo'<br>';
+echo'<br>';
+$elfe -> afficheGetAll();   
+echo'<br>';
+echo'<br>';
+echo'<br>';
+echo'<br>';
+$nain -> afficheGetAll();
+echo'<br>';
+echo'<br>';
+

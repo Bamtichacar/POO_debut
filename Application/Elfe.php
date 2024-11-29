@@ -357,7 +357,8 @@ public function getAll() {
         'unitesDeEnVie' => $this->unitesDeEnVie,
         'unitesDeTalent' => $this->unitesDeTalent,
         'unitesDeArme' => $this->unitesDeArme,
-        'degats' => $this->degats,
+        "dégats faits à l'adversaire" => $this->degats,
+        "dégats reçus" => $cible->degats,
         'unitesTotalesDuPerso' => $this->unitesTotalesDuPerso,
     ];
 }
@@ -383,6 +384,7 @@ public function attaquerEnnemiAvecArme($cible, $arme, $typeA='null', $talent, $t
     $this -> $arme($typeA);
     $this -> $talent($typeT);
     $this -> force;
+    $this -> unitesTotalesDuPerso;
     //$cible -> PV -= $this -> force;
     $cible -> PV -= $this -> degats;
 }
