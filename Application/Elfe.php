@@ -457,4 +457,10 @@ public function attaquerEnnemiAvecArme($cible, $arme, $typeA='null', $talent, $t
 }
 
 
+public function seDefendreContreEnnemi($attaquant) {
+    
+}
+
+
+
 }
