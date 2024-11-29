@@ -1,7 +1,7 @@
 <?php
 include './autoLoader.php';
 
-$maVoiture = new Voiture('Audi', 'rx5', 144, 270, 3);
+/* $maVoiture = new Voiture('Audi', 'rx5', 144, 270, 3);
 var_dump($maVoiture);
 echo'<br>';
 
@@ -21,23 +21,34 @@ $essai2 = new Nain('ugo');
 var_dump($essai2);
 echo'<br>';
 echo'<br>';
-
+ */
 
 $elfe = new Elfe('henri');
-var_dump($elfe);
+/* var_dump($elfe);
 echo'<br>';
 echo'<br>';
-
+ */
 $nain = new Nain('jacques');
-var_dump($nain);
+/* var_dump($nain);
 echo'<br>';
 echo'<br>';
 $cible;
-
+ */
 $DomeDuTonnerre;
 $DomeDuTonnerre = [$elfe, $nain];
 $firstStrike = $nain ->defendre() - $elfe -> attaquer();
-var_dump($firstStrike);
+$secondstrike = $elfe -> attaquerEnnemiAvecArme($nain, 'arc', 'niveau_2', 'voleur','niveau_1') -$nain -> attaquerEnnemiAvecArme($elfe, 'arc', '', 'magicien', 'niveau_2');
+//var_dump($secondstrike);
+echo'<br>';
+echo'<br>';
+
+$elfe ->afficheGetAll();
+echo'<br>';
+echo'<br>';
+
+$nain -> afficheGetAll();
+
+//var_dump($firstStrike);
 echo'<br>';
 echo'<br>';
 
@@ -162,7 +173,7 @@ echo'<br>';
 echo $elfe -> getgeneral('name');
 echo $elfe -> getgeneral('force');
  */
-echo'<br>';
+/* echo'<br>';
 echo'<br>';
 $nain -> afficheGetAll();
 echo'<br>';
@@ -175,9 +186,9 @@ echo'<br>';
 echo'<br>';
 
 
+ */
 
-
-echo "<h3>Combat test</h3>";
+/* echo "<h3>Combat test</h3>";
 echo'<br>';
 echo'<br>';
 $elfe -> attaquerEnnemiAvecArme($nain, 'arc','niveau_1','cavalier', 'niveau_3');
@@ -192,9 +203,9 @@ echo'<br>';
 $nain -> afficheGetAll();
 echo'<br>';
 echo'<br>';
+ */
 
-
-echo "<h3>Combat test numero 2</h3>";
+/* echo "<h3>Combat test numero 2</h3>";
 echo'<br>';
 echo'<br>';
 $elfe -> attaquerEnnemiAvecArme($nain, 'arc','','cavalier', 'niveau_3');
@@ -210,3 +221,4 @@ $nain -> afficheGetAll();
 echo'<br>';
 echo'<br>';
 
+ */

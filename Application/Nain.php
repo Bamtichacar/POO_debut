@@ -1,24 +1,24 @@
 <?php
 class Nain extends Perso Implements Arme, Talent {
-    
+
     // implementation de Arme
     public function epee($type) {
         switch ($type) {
             case 'niveau_1':
                 $this->force = 150000;
-                $this -> degats = 30;
+                $this -> degatsMisEnJeuParLAttaque = 30;
                 break;
             case 'niveau_2':
                 $this->force = 200000;
-                $this -> degats = 40;
+                $this -> degatsMisEnJeuParLAttaque = 40;
                 break;
                 case 'niveau_3':
                     $this->force = 300000;
-                    $this -> degats = 50;
+                    $this -> degatsMisEnJeuParLAttaque = 50;
                     break;
             default:
                 $this->force = 100000; // Valeurs par défaut
-                $this -> degats = 10;
+                $this -> degatsMisEnJeuParLAttaque = 10;
         }
     }
 
@@ -26,19 +26,19 @@ class Nain extends Perso Implements Arme, Talent {
         switch ($type) {
             case 'niveau_1':
                 $this->force = 150000;
-                $this -> degats = 30;
+                $this -> degatsMisEnJeuParLAttaque = 30;
                 break;
             case 'niveau_2':
                 $this->force = 200000;
-                $this -> degats = 40;
+                $this -> degatsMisEnJeuParLAttaque = 40;
                 break;
                 case 'niveau_3':
                     $this->force = 300000;
-                    $this -> degats = 50;
+                    $this -> degatsMisEnJeuParLAttaque = 50;
                     break;
             default:
                 $this->force = 100000; // Valeurs par défaut
-                $this -> degats = 10;
+                $this -> degatsMisEnJeuParLAttaque = 10;
         }
     }
 
@@ -46,19 +46,19 @@ class Nain extends Perso Implements Arme, Talent {
         switch ($type) {
             case 'niveau_1':
                 $this->force = 150000;
-                $this -> degats = 30;
+                $this -> degatsMisEnJeuParLAttaque = 30;
                 break;
             case 'niveau_2':
                 $this->force = 200000;
-                $this -> degats = 40;
+                $this -> degatsMisEnJeuParLAttaque = 40;
                 break;
                 case 'niveau_3':
                     $this->force = 300000;
-                    $this -> degats = 50;
+                    $this -> degatsMisEnJeuParLAttaque = 50;
                     break;
             default:
                 $this->force = 100000; // Valeurs par défaut
-                $this -> degats = 10;
+                $this -> degatsMisEnJeuParLAttaque = 10;
         }
     }
 
@@ -66,19 +66,19 @@ class Nain extends Perso Implements Arme, Talent {
         switch ($type) {
             case 'niveau_1':
                 $this->force = 150000;
-                $this -> degats = 30;
+                $this -> degatsMisEnJeuParLAttaque = 30;
                 break;
             case 'niveau_2':
                 $this->force = 200000;
-                $this -> degats = 40;
+                $this -> degatsMisEnJeuParLAttaque = 40;
                 break;
                 case 'niveau_3':
                     $this->force = 300000;
-                    $this -> degats = 50;
+                    $this -> degatsMisEnJeuParLAttaque = 50;
                     break;
             default:
                 $this->force = 100000; // Valeurs par défaut
-                $this -> degats = 10;
+                $this -> degatsMisEnJeuParLAttaque = 10;
         }
     }
 
@@ -86,19 +86,19 @@ class Nain extends Perso Implements Arme, Talent {
         switch ($type) {
             case 'niveau_1':
                 $this->force = 150000;
-                $this -> degats = 30;
+                $this -> degatsMisEnJeuParLAttaque = 30;
                 break;
             case 'niveau_2':
                 $this->force = 200000;
-                $this -> degats =40;
+                $this -> degatsMisEnJeuParLAttaque =40;
                 break;
                 case 'niveau_3':
                     $this->force = 300000;
-                    $this -> degats = 50;
+                    $this -> degatsMisEnJeuParLAttaque = 50;
                     break;
             default:
                 $this->force = 100000; // Valeurs par défaut
-                $this -> degats = 10;
+                $this -> degatsMisEnJeuParLAttaque = 10;
         }
     }
 
@@ -107,19 +107,19 @@ class Nain extends Perso Implements Arme, Talent {
         switch ($type) {
             case 'niveau_1':
                 $this->force *= 1.5;
-                $this -> degats *= 1.5;
+                $this -> degatsMisEnJeuParLAttaque *= 1.5;
                 break;
             case 'niveau_2':
                 $this->force *= 2;
-                $this -> degats *= 2;
+                $this -> degatsMisEnJeuParLAttaque *= 2;
                 break;
                 case 'niveau_3':
                     $this->force *= 3;
-                    $this -> degats *= 3;
+                    $this -> degatsMisEnJeuParLAttaque *= 3;
                     break;
             default:
                 $this->force = $force; // Valeur par défaut
-                $this -> degats = $degats;
+                $this -> degatsMisEnJeuParLAttaque = $degatsMisEnJeuParLAttaque;
 
         }
     }
@@ -127,95 +127,95 @@ class Nain extends Perso Implements Arme, Talent {
         switch ($type) {
             case 'niveau_1':
                 $this->force *= 1.5;
-                $this -> degats *= 1.5;
+                $this -> degatsMisEnJeuParLAttaque *= 1.5;
                 break;
             case 'niveau_2':
                 $this->force *= 2;
-                $this -> degats *= 2;
+                $this -> degatsMisEnJeuParLAttaque *= 2;
                 break;
                 case 'niveau_3':
                     $this->force *= 3;
-                    $this -> degats *= 3;
+                    $this -> degatsMisEnJeuParLAttaque *= 3;
                     break;
             default:
             $this->force = $force; // Valeur par défaut
-            $this -> degats = $degats;
+            $this -> degatsMisEnJeuParLAttaque = $degatsMisEnJeuParLAttaque;
         }
     }
     public function guerrier($type) {
         switch ($type) {
             case 'niveau_1':
                 $this->force *= 1.5;
-                $this -> degats *= 1.5;
+                $this -> degatsMisEnJeuParLAttaque *= 1.5;
                 break;
             case 'niveau_2':
                 $this->force *= 2;
-                $this -> degats *= 2;
+                $this -> degatsMisEnJeuParLAttaque *= 2;
                 break;
                 case 'niveau_3':
                     $this->force *= 3;
-                    $this -> degats *= 3;
+                    $this -> degatsMisEnJeuParLAttaque *= 3;
                     break;
             default:
             $this->force = $force; // Valeur par défaut
-            $this -> degats = $degats;
+            $this -> degatsMisEnJeuParLAttaque = $degatsMisEnJeuParLAttaque;
         }
     }
     public function necromancien($type) {
         switch ($type) {
             case 'niveau_1':
                 $this->force *= 1.5;
-                $this -> degats *= 1.5;
+                $this -> degatsMisEnJeuParLAttaque *= 1.5;
                 break;
             case 'niveau_2':
                 $this->force *= 2;
-                $this -> degats *= 2;
+                $this -> degatsMisEnJeuParLAttaque *= 2;
                 break;
                 case 'niveau_3':
                     $this->force *= 3;
-                    $this -> degats *= 3;
+                    $this -> degatsMisEnJeuParLAttaque *= 3;
                     break;
             default:
             $this->force = $force; // Valeur par défaut
-            $this -> degats = $degats;
+            $this -> degatsMisEnJeuParLAttaque = $degatsMisEnJeuParLAttaque;
         }
     }
     public function voleur($type) {
         switch ($type) {
             case 'niveau_1':
                 $this->force *= 1.5;
-                $this -> degats *= 1.5;
+                $this -> degatsMisEnJeuParLAttaque *= 1.5;
                 break;
             case 'niveau_2':
                 $this->force *= 2;
-                $this -> degats *= 2;
+                $this -> degatsMisEnJeuParLAttaque *= 2;
                 break;
                 case 'niveau_3':
                     $this->force *= 3;
-                    $this -> degats *= 3;
+                    $this -> degatsMisEnJeuParLAttaque *= 3;
                     break;
             default:
             $this->force = $force; // Valeur par défaut
-            $this -> degats = $degats;
+            $this -> degatsMisEnJeuParLAttaque = $degatsMisEnJeuParLAttaque;
         }
     }
     public function assassin($type) {
         switch ($type) {
             case 'niveau_1':
                 $this->force *= 1.5;
-                $this -> degats *= 1.5;
+                $this -> degatsMisEnJeuParLAttaque *= 1.5;
                 break;
             case 'niveau_2':
                 $this->force *= 2;
-                $this -> degats *= 2;
+                $this -> degatsMisEnJeuParLAttaque *= 2;
                 break;
                 case 'niveau_3':
                     $this->force *= 3;
-                    $this -> degats *= 3;
+                    $this -> degatsMisEnJeuParLAttaque *= 3;
                     break;
             default:
             $this->force = $force; // Valeur par défaut
-            $this -> degats = $degats;
+            $this -> degatsMisEnJeuParLAttaque = $degatsMisEnJeuParLAttaque;
         }
     }
 
@@ -224,12 +224,12 @@ class Nain extends Perso Implements Arme, Talent {
     }
  */
 
-public function __construct($nom) {
-    $this->name = $nom;
+public function __construct($toto) {
+    $this->name = $toto;
     $this->unitesDeRace = 70;
     $this->PV = 100;
-    $this->force = 40;
-    $this->endurance = 60;
+    $this->force = 60;
+    $this->endurance = 70;
     $this->enVie = true;
     $this->unitesDeEnVie = 50;
     $this->unitesDeTalent = 0;
@@ -246,8 +246,10 @@ public function pointsestenVie() {
     }
 }
 
-// Création de la variable pour les dégâts des attaques
-private $degats;
+// Création des variables pour les dégâts des attaques
+public $degatsMisEnJeuParLAttaque = 0;
+public $degatsRecus = 0;
+public $degatsFaitsALAdversaire = 0;
 
 // determination des unités de l'armee
 
@@ -289,7 +291,7 @@ private $degats;
         $this -> unitesTotalesDuPerso = $unitesTotalesDuPerso;
     }
 
-
+ 
     // fct pour avoir le nom de la classe
     public function getClassName() {
         return get_class($this);
@@ -357,8 +359,9 @@ public function getAll() {
         'unitesDeEnVie' => $this->unitesDeEnVie,
         'unitesDeTalent' => $this->unitesDeTalent,
         'unitesDeArme' => $this->unitesDeArme,
-        "dégats faits à l'adversaire" => $this->degats,
-        "dégats reçus" => $cible->degats,
+        "dégats mis en jeu par l'attaque" => $this->degatsMisEnJeuParLAttaque,
+        "dégats reçus" => $this ->degatsRecus,
+        "dégats faits à l'adversaire" => $this->degatsFaitsALAdversaire,
         'unitesTotalesDuPerso' => $this->unitesTotalesDuPerso,
     ];
 }
@@ -385,8 +388,13 @@ public function attaquerEnnemiAvecArme($cible, $arme, $typeA='null', $talent, $t
     $this -> $talent($typeT);
     $this -> force;
     $this -> unitesTotalesDuPerso;
+    $this -> degatsMisEnJeuParLAttaque;
     //$cible -> PV -= $this -> force;
-    $cible -> PV -= $this -> degats;
+    $this-> degatsFaitsALAdversaire += $this -> degatsMisEnJeuParLAttaque;
+    $cible -> PV -= $this -> degatsMisEnJeuParLAttaque;
+    $cible -> degatsRecus += $this-> degatsFaitsALAdversaire;
+    $cible -> unitesTotalesDuPerso -= $cible -> degatsRecus;
 }
+
 
 }
