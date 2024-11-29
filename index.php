@@ -28,7 +28,7 @@ var_dump($elfe);
 echo'<br>';
 echo'<br>';
 
-$nain = new Nain('');
+$nain = new Nain('jacques');
 var_dump($nain);
 echo'<br>';
 echo'<br>';
@@ -48,7 +48,7 @@ echo'<br>';
 echo'<br>';
 echo'<br>';
 
-var_dump($elfe);
+/* var_dump($elfe);
 echo'<br>';
 echo'<br>';
 
@@ -149,9 +149,11 @@ foreach ($valeurs as $cle => $valeur) {
     echo "$cle: $valeur\n";
 }
 echo'<br>';
+
+echo'<br>';
 $elfe -> afficheGetAll();
 echo'<br>';
-
+echo'<br>';
 $nain -> afficheGetAll();
 
 
@@ -159,3 +161,16 @@ echo'<br>';
 echo'<br>';
 echo $elfe -> getgeneral('name');
 echo $elfe -> getgeneral('force');
+ */
+echo'<br>';
+echo'<br>';
+$nain -> afficheGetAll();
+echo'<br>';
+echo'<br>';
+//$elfe ->getUnitesTotalesDuPerso();
+echo'<br>';
+echo'<br>';
+$elfe -> afficheGetAll();
+echo'<br>';
+echo'<br>';
+
