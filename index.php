@@ -174,3 +174,23 @@ $elfe -> afficheGetAll();
 echo'<br>';
 echo'<br>';
 
+
+
+
+echo "<h3>Combat test</h3>";
+echo'<br>';
+echo'<br>';
+$elfe -> attaquerEnnemiAvecArme($nain, 'arc','niveau_1','cavalier', 'niveau_3');
+
+echo'<br>';
+echo'<br>';
+$elfe -> afficheGetAll();   
+echo'<br>';
+echo'<br>';
+echo'<br>';
+echo'<br>';
+$nain -> afficheGetAll();
+echo'<br>';
+echo'<br>';
+
+

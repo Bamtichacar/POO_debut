@@ -5,7 +5,10 @@ protected int $PV;
 protected int $endurance;
 protected int $force;
 protected bool $enVie;
-protected int $pointsDeEnVie;
+protected int $unitesDeEnVie;
+protected int $unitesDeTalent;
+protected int $unitesDeArme;
+//protected int $unitesDeRatelier;
 protected int $UnitesTotalesDuPerso;
 
 

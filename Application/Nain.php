@@ -177,19 +177,22 @@ class Nain extends Perso Implements Arme, Talent {
 
 public function __construct($toto) {
     $this->name = $toto;
-    $this->uniteRace = 70;
+    $this->unitesDeRace = 70;
     $this->PV = 100;
     $this->force = 60;
     $this->endurance = 70;
     $this->enVie = true;
-    $this->pointsDeEnVie = 50;
-    $this->unitesTotalesDuPerso = $this -> uniteRace + $this ->force + $this -> endurance + $this -> PV + $this -> pointsDeEnVie;
+    $this->unitesDeEnVie = 50;
+    $this->unitesDeTalent = 0;
+    $this->unitesDeArme = 0;
+    //$this->unitesDeRatelier = 0;
+    $this->unitesTotalesDuPerso = $this -> unitesDeRace + $this ->force + $this -> endurance + $this -> PV + $this -> unitesDeEnVie;
 }
 public function pointsestenVie() {
     if ($this->enVie) {
-        return $this -> pointsDeEnVie = 50;
+        return $this -> unitesDeEnVie = 50;
     } else {
-        return $this-> pointsDeEnVie = 0;
+        return $this-> unitesDeEnVie = 0;
     }
 }
 
@@ -203,8 +206,8 @@ public function UnitesArmee(){
     public function setNom(string  $nom) {
         $this -> name = $nom;
     }
-    public function setUniteRace(int  $uniteRace) {
-        $this -> uniteRace = $uniteRace;
+    public function setunitesDeRace(int  $unitesDeRace) {
+        $this -> unitesDeRace = $unitesDeRace;
     }
     public function setPV(int  $PV) {
         $this -> PV = $PV;
@@ -233,8 +236,8 @@ public function UnitesArmee(){
     public function getNom() {
         return $this -> name;
     }
-    public function getUniteRace() {
-        return $this -> uniteRace;
+    public function getunitesDeRace() {
+        return $this -> unitesDeRace;
     }
     public function getPV() {
         return $this -> PV;
@@ -274,12 +277,12 @@ public function getAll() {
     return [
         'class' => get_class($this),
         'name' => $this->name,
-        'uniteRace' => $this->uniteRace,
+        'unitesDeRace' => $this->unitesDeRace,
         'PV' => $this->PV,
         'force' => $this->force,
         'endurance' => $this->endurance,
         'enVie' => $this->enVie,
-        'pointsDeVie' => $this->pointsDeEnVie,
+        'pointsDeVie' => $this->unitesDeEnVie,
         'unitesTotalesDuPerso' => $this->unitesTotalesDuPerso,
     ];
 }
